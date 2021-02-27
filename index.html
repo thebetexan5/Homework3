@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="C:\Users\khawu\smu-dal-fsf-pt-01-2021-u-c-2\03-JavaScript\02-Homework\Develop\style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="options">
+          <h3>Password options:</h5>
+
+          <div class="grid-container">
+            <div class="option length-selector-container">
+              <label for="passwordLength">Password length: <strong><span id="lengthValue"></span></strong></label>
+              <input type="range" min="15" max="128" value="15" class="length-selector" id="passwordLength">
+            </div>
+            <div class="option">
+              <label for="lowerChars" class="collection">Contains lowercase
+                <input type="checkbox" id="lowerChars" class="collection-selector" checked>
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="option">
+              <label for="upperChars" class="collection">Contains uppercase
+                <input type="checkbox" id="upperChars" class="collection-selector">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="option">
+              <label for="numericChars" class="collection">Contains numbers
+                <input type="checkbox" id="numericChars" class="collection-selector" checked>
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="option">
+              <label for="specialChars" class="collection">Contains special characters
+                <input type="checkbox" id="specialChars" class="collection-selector">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+
+        </div>
+        <div class="card-footer">
+          <button id="generate" class="btn" onClick="handleGeneratePassword();">Generate Password</button>
+        </div>
+      </div>
+    </div>
+    <script src="C:\Users\khawu\smu-dal-fsf-pt-01-2021-u-c-2\03-JavaScript\02-Homework\Develop\passgen.js"></script>
+    <script src="C:\Users\khawu\smu-dal-fsf-pt-01-2021-u-c-2\03-JavaScript\02-Homework\Develop\index.js"></script>
+  </body>
+</html>
